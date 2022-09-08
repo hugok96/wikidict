@@ -1,0 +1,39 @@
+.Initializing {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgba(38, 38, 38, 0.75);
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.Spinner {
+  display: block;
+  font-size: 5rem;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  transform-origin: 5.2rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Spinner {
+    animation: Initializing-spin infinite 1s linear;
+  }
+}
+
+@keyframes Initializing-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,25 @@
+.language {
+  background: #262626;
+  margin: .5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: .75rem;
+  user-select: none;
+  transition: background .25s;
+}
+
+.language, .language * {
+  cursor: pointer;
+}
+
+.language label {
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.language.active {
+  background: #435552
+}
